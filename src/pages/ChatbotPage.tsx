@@ -5,7 +5,13 @@ interface Message {
   content: string;
 }
 
-const GROQ_API_KEY = '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';
+// Read the GROQ API key from Vite env. Prefix must be VITE_ to be exposed to the client.
+const GROQ_API_KEY: string = (import.meta.env.VITE_GROQ_API_KEY as string) || '';
+
+if (!GROQ_API_KEY) {
+  // Helpful warning during development when env is not set
+  console.log('Warning: VITE_GROQ_API_KEY is not set. Chatbot requests will fail without a valid API key.');
+}
 
 export default function ChatbotPage() {
   const [messages, setMessages] = useState<Message[]>([]);
