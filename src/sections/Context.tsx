@@ -12,7 +12,7 @@ export default function Context() {
         </div>
         <div className="context-media" aria-hidden="true">
           <div className="image-frame">
-            <img src="/nha-hat-lon-hanoi-1945.jpg" alt="Lễ tuyên thệ của bộ đội Việt Nam tại Nhà hát lớn Hà Nội năm 1945" />
+            <img src="/16-37-16-29-07-2025-anh-2_1.jpg" alt="Lễ tuyên thệ của bộ đội Việt Nam tại Nhà hát lớn Hà Nội năm 1945" />
             <div className="image-vignette" />
           </div>
         </div>

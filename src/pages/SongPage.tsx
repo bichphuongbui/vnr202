@@ -7,7 +7,7 @@ export default function SongPage() {
         <div className="audio-card">
  
           <audio controls preload="metadata" style={{ width: '100%' }}>
-            <source src="/bai-hat-cach-mang.mp3" type="audio/mpeg" />
+            <source src="/src/assets/🎶 Verse 1_ (1) (mp3cut.net).mp3" type="audio/mpeg" />
             Trình duyệt của bạn không hỗ trợ phát audio.
           </audio>
         </div>
