@@ -37,9 +37,9 @@ export default function Header() {
         <nav id="nav-menu" className="nav-menu" aria-label="Điều hướng chính">
           <a href="/">Trang chủ</a>
           <a href="/ai">Minh bạch AI</a>
-          <a href="#chatbot">Chatbot</a>
+          <a href="/chatbot">Chatbot</a>
           <a href="/video">Video</a>
-          <a href="#today">Thực tiễn hôm nay</a>
+          <a href="/lessons">Bài học</a>
           <a href="/song">Bài hát</a>
           <a href="https://padlet.com/bichphuongbui2015/vnr-q-a-ipjjn48xo6mbigc5" target="_blank" rel="noreferrer">Q&A</a>
         </nav>

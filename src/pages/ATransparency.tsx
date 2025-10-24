@@ -1,98 +1,180 @@
-//
-
-export default function ATransparency() {
+﻿export default function ATransparency() {
   return (
-    <main id="ai" className="section ai-page">
-      <div className="section-inner">
-        <h1 className="section-title">Minh bạch AI (AI Transparency)</h1>
-        <p className="section-subtitle">Cách Nhóm 18 sử dụng AI trong dự án “Từ gian khổ đến vinh quang”.</p>
+    <div className="ai-transparency-page">
+      {/* Hero Section */}
+      <section className="ai-hero">
+        <div className="container">
+          <h1 className="ai-hero-title">Tính Minh Bạch trong Ứng Dụng AI</h1>
+          <p className="ai-hero-subtitle">
+            Chúng tôi cam kết sử dụng các công cụ AI một cách minh bạch, có trách nhiệm và tuân thủ các nguyên tắc đạo đức học thuật. 
+            Mọi ứng dụng AI đều được kiểm soát chặt chẽ và phục vụ mục đích hỗ trợ, không thay thế tư duy con người.
+          </p>
+        </div>
+      </section>
 
-        {/* 4.1 Minh bạch */}
-        <section className="ai-section reveal">
-          <h2 className="ai-h2">4.1 Minh bạch</h2>
-          <p className="ai-note">Tất cả nội dung được AI hỗ trợ đều được nhóm biên tập, chỉnh sửa, kiểm chứng trước khi sử dụng.</p>
-          <div className="ai-table-wrap">
-            <table className="ai-table" aria-label="Bảng AI Usage">
-              <thead>
-                <tr>
-                  <th>Công cụ / Nền tảng</th>
-                  <th>Mục đích sử dụng</th>
-                  <th>Prompt chính</th>
-                  <th>Kết quả tạo ra</th>
-                  <th>Phần chỉnh sửa của sinh viên</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Công cụ / Nền tảng">Cursor + API Chatbot</td>
-                  <td data-label="Mục đích sử dụng">Tạo chatbot hỏi đáp về chủ đề lịch sử (1945–1954)</td>
-                  <td data-label="Prompt chính">“Generate Q&A about Vietnam’s revolution”</td>
-                  <td data-label="Kết quả tạo ra">Gợi ý câu hỏi, phản hồi tự động</td>
-                  <td data-label="Phần chỉnh sửa của sinh viên">Sinh viên biên tập, bổ sung dữ kiện, kiểm chứng theo giáo trình LLCT</td>
-                </tr>
-                <tr>
-                  <td data-label="Công cụ / Nền tảng">Luma AI (API)</td>
-                  <td data-label="Mục đích sử dụng">Tạo hình ảnh minh họa & hiệu ứng video</td>
-                  <td data-label="Prompt chính">“Generate cinematic 1945–1954 scenes”</td>
-                  <td data-label="Kết quả tạo ra">Video nền và cảnh minh họa</td>
-                  <td data-label="Phần chỉnh sửa của sinh viên">Sinh viên chọn cảnh, thêm thuyết minh</td>
-                </tr>
-                <tr>
-                  <td data-label="Công cụ / Nền tảng">NotebookLM (Google)</td>
-                  <td data-label="Mục đích sử dụng">Tổng hợp & tóm tắt nội dung bài thuyết trình</td>
-                  <td data-label="Prompt chính">“Summarize and visualize Vietnam’s revolution (1945–1954)”</td>
-                  <td data-label="Kết quả tạo ra">Video tóm tắt 2–3 phút</td>
-                  <td data-label="Phần chỉnh sửa của sinh viên">Sinh viên kiểm tra nội dung, hiệu chỉnh lời dẫn</td>
-                </tr>
-                <tr>
-                  <td data-label="Công cụ / Nền tảng">ChatGPT (OpenAI)</td>
-                  <td data-label="Mục đích sử dụng">Hỗ trợ ý tưởng, soạn quiz, gợi ý cấu trúc web</td>
-                  <td data-label="Prompt chính">“Create quiz + presentation structure for history project”</td>
-                  <td data-label="Kết quả tạo ra">Gợi ý outline, câu hỏi, nội dung</td>
-                  <td data-label="Phần chỉnh sửa của sinh viên">Sinh viên biên tập, xác minh và trình bày lại bằng ngôn ngữ riêng</td>
-                </tr>
-              </tbody>
-            </table>
+      {/* Công Cụ AI Đã Sử Dụng */}
+      <section className="ai-tools-section">
+        <div className="container">
+          <h2 className="section-title">Công Cụ AI Đã Sử Dụng</h2>
+          <div className="ai-tools-grid">
+            <div className="ai-tool-card">
+              <h3>NotebookLM</h3>
+              <p className="tool-purpose">Tham khảo lý thuyết, tạo video tóm tắt</p>
+              <p className="tool-note">Nghiên cứu, phân tích tài liệu</p>
+            </div>
+            
+            <div className="ai-tool-card">
+              <h3>Cursor</h3>
+              <p className="tool-purpose">Viết code, kết nối API, debug</p>
+              <p className="tool-note">Lập trình chatbot</p>
+            </div>
+            
+            <div className="ai-tool-card">
+              <h3>Llama</h3>
+              <p className="tool-purpose">Hỏi nhanh, tra cứu khái niệm</p>
+              <p className="tool-note">Hỗ trợ nghiên cứu</p>
+            </div>
+            
+            <div className="ai-tool-card">
+              <h3>Suno AI</h3>
+              <p className="tool-purpose">Tạo giai điệu nhạc và ca khúc</p>
+              <p className="tool-note">Sáng tác nhạc cách mạng</p>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* 4.2 Có trách nhiệm */}
-        <section className="ai-section reveal">
-          <h2 className="ai-h2">4.2 Có trách nhiệm</h2>
-          <ul className="ai-bullets">
-            <li>Đối chiếu với giáo trình LLCT, nghị quyết, văn bản chính thống (Ban Tuyên giáo, Bộ GD&ĐT, Hồ Chí Minh Toàn tập,...).</li>
-            <li>Chịu trách nhiệm về tính chính xác của nội dung cuối cùng.</li>
-          </ul>
-          <blockquote className="ai-quote">“Nhóm 18 cam kết toàn bộ nội dung được kiểm chứng và biên tập lại dựa trên nguồn chính thống, đảm bảo tính học thuật và trung thực.”</blockquote>
-        </section>
-
-        {/* 4.3 Sáng tạo */}
-        <section className="ai-section reveal">
-          <h2 className="ai-h2">4.3 Sáng tạo</h2>
-          <ul className="ai-bullets">
-            <li>AI hỗ trợ kỹ thuật: sơ đồ tư duy, slide, quiz, chatbot, video, bài hát.</li>
-            <li>Phân tích, tổng hợp, đánh giá, kết luận: do sinh viên tự biên soạn.</li>
-          </ul>
-          <p className="ai-note">“AI là công cụ, không phải người thay thế tư duy.”</p>
-        </section>
-
-        {/* 4.4 Liêm chính học thuật */}
-        <section className="ai-section reveal">
-          <h2 className="ai-h2">4.4 Liêm chính học thuật</h2>
-          <ul className="ai-bullets">
-            <li>Cam kết: “Không để AI thay thế toàn bộ nội dung của sinh viên.”</li>
-            <li>Phân biệt: gắn <span className="ai-chip">(AI hỗ trợ)</span> và <span className="ai-chip alt">(Chỉnh sửa bởi nhóm 18)</span>.</li>
-            <li>Đối chiếu nguồn: trích dẫn tài liệu LLCT, giáo trình, nghị quyết, văn bản chính thống.</li>
-          </ul>
-          <p className="ai-footer">“Chúng tôi tin rằng sự kết hợp giữa AI và tư duy con người không chỉ giúp học tập hiệu quả hơn, mà còn tôn trọng sự trung thực và sáng tạo trong nghiên cứu khoa học.”</p>
-          <div className="ai-brand">
-            <span className="brand-mark" aria-hidden>★</span>
-            <span className="brand-text">Nhóm 18</span>
+      {/* Mục Đích Sử Dụng AI */}
+      <section className="ai-purpose-section">
+        <div className="container">
+          <h2 className="section-title">Mục Đích Sử Dụng AI</h2>
+          <div className="ai-purpose-grid">
+            <div className="purpose-column">
+              <h3>NotebookLM</h3>
+              <ul>
+                <li>Tham khảo lý thuyết từ tài liệu học thuật</li>
+                <li>Tạo video tóm tắt nội dung phức tạp</li>
+                <li>Hỗ trợ nghiên cứu và phân tích</li>
+              </ul>
+            </div>
+            
+            <div className="purpose-column">
+              <h3>Cursor</h3>
+              <ul>
+                <li>Hỗ trợ viết code cho chatbot</li>
+                <li>Kết nối API và xử lý dữ liệu</li>
+                <li>Debug và tối ưu hóa code</li>
+              </ul>
+            </div>
+            
+            <div className="purpose-column">
+              <h3>Llama</h3>
+              <ul>
+                <li>Hỏi đáp nhanh các vấn đề nghiên cứu</li>
+                <li>Hỗ trợ tìm hiểu khái niệm mới</li>
+                <li>Tham vấn ý tưởng và phương pháp</li>
+              </ul>
+            </div>
+            
+            <div className="purpose-column">
+              <h3>Suno AI</h3>
+              <ul>
+                <li>Sáng tác giai điệu ca khúc cách mạng</li>
+                <li>Tạo nhạc nền cho video và trình bày</li>
+                <li>Kết hợp lời ca với âm nhạc</li>
+              </ul>
+            </div>
           </div>
-        </section>
-      </div>
-    </main>
-  )
+        </div>
+      </section>
+
+      {/* Vai Trò Hỗ Trợ */}
+      <section className="ai-role-section">
+        <div className="container">
+          <div className="ai-role-box">
+            <h2 className="role-title">Vai Trò Hỗ Trợ – Không Thay Thế</h2>
+            <p className="role-statement">
+              AI chỉ đóng vai trò hỗ trợ, không thay thế tư duy và sáng tạo của con người.
+            </p>
+            <ul className="role-list">
+              <li>Gợi ý nội dung</li>
+              <li>Hỗ trợ code</li>
+              <li>Tạo video minh họa</li>
+              <li>Tư vấn nghiên cứu</li>
+            </ul>
+            <div className="role-warning">
+              <strong>Lưu ý quan trọng:</strong> AI không thay thế hoàn toàn tư duy, phân tích và trình bày của thành viên.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kiểm Tra và Chỉnh Sửa */}
+      <section className="ai-check-section">
+        <div className="container">
+          <h2 className="section-title">Kiểm Tra và Chỉnh Sửa Sau Khi Dùng AI</h2>
+          <div className="ai-check-steps">
+            <div className="check-step">
+              <span className="step-number">1</span>
+              <div className="step-content">
+                <h3>Kiểm tra nội dung lý thuyết</h3>
+                <p>Đối chiếu với giáo trình "Chủ nghĩa xã hội khoa học"</p>
+              </div>
+            </div>
+            
+            <div className="check-step">
+              <span className="step-number">2</span>
+              <div className="step-content">
+                <h3>Review và test code</h3>
+                <p>Kiểm tra, chỉnh sửa code do AI tạo</p>
+              </div>
+            </div>
+            
+            <div className="check-step">
+              <span className="step-number">3</span>
+              <div className="step-content">
+                <h3>Xác minh video content</h3>
+                <p>Đảm bảo tính chính xác</p>
+              </div>
+            </div>
+            
+            <div className="check-step">
+              <span className="step-number">4</span>
+              <div className="step-content">
+                <h3>Đánh giá tổng thể</h3>
+                <p>Đảm bảo thống nhất và đúng đắn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cam Kết Liêm Chính */}
+      <section className="ai-commitment-section">
+        <div className="container">
+          <div className="ai-commitment-box">
+            <h2 className="commitment-title">Cam Kết Liêm Chính Học Thuật</h2>
+            <ul className="commitment-list">
+              <li>Không thay thế tư duy con người</li>
+              <li>Phân biệt rõ phần AI tạo và phần con người chỉnh sửa</li>
+              <li>Đối chiếu nguồn chính thống</li>
+              <li>Cam kết liêm chính và minh bạch trong mọi ứng dụng</li>
+            </ul>
+            <div className="commitment-statement">
+              Chúng tôi cam kết sử dụng AI như một công cụ hỗ trợ, không thay thế tư duy và trình bày của mình. 
+              Mọi nội dung đều được kiểm tra, đánh giá và chỉnh sửa cẩn thận để đảm bảo tính chính xác và tuân thủ đạo đức học thuật.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="ai-transparency-footer">
+        <div className="container">
+          <p>© 2025 – Nhóm Nghiên Cứu Ứng Dụng AI</p>
+          <p>Liên hệ: transparency@researchgroup.edu.vn</p>
+        </div>
+      </footer>
+    </div>
+  );
 }
-
-

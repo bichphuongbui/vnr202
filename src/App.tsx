@@ -9,6 +9,8 @@ import Closing from './sections/Closing.tsx'
 import VideoPage from './pages/VideoPage'
 import SongPage from './pages/SongPage'
 import ATransparency from './pages/ATransparency'
+import LessonsPage from './pages/LessonsPage'
+import ChatbotPage from './pages/ChatbotPage'
 
 function App() {
   useEffect(() => {
@@ -64,6 +66,8 @@ function App() {
         <Route path="/video" element={<VideoPage />} />
         <Route path="/song" element={<SongPage />} />
         <Route path="/ai" element={<ATransparency />} />
+        <Route path="/chatbot" element={<ChatbotPage />} />
+        <Route path="/lessons" element={<LessonsPage />} />
       </Routes>
     </>
   )

@@ -3,11 +3,12 @@ export default function Context() {
     <section id="context" className="section context-section reveal">
       <div className="section-inner context-grid">
         <div className="context-text">
-          <span className="kicker">Bối cảnh & Ý nghĩa</span>
+          <span className="kicker">Bối cảnh & Ý nghĩa lịch sử</span>
           <h2 className="section-title">Từ gian khó đến kỳ tích lịch sử</h2>
           <p className="context-lead">
-            Sau Cách mạng Tháng Tám, đất nước đứng trước muôn vàn khó khăn. Nhưng với ý chí quật cường và sự lãnh đạo đúng đắn, cách mạng Việt Nam đã tạo nên chiến thắng làm rạng danh dân tộc.
+            Sau Cách mạng Tháng Tám thành công, non sông Việt Nam tuy đã được giải phóng nhưng đất nước vẫn đối mặt với vô vàn thử thách: kinh tế bần cùng, giặc đói hoành hành, thực dân Pháp trở lại xâm lược. Trong hoàn cảnh "ngàn cân treo sợi tóc", dưới sự lãnh đạo sáng suốt của Đảng và Chủ tịch Hồ Chí Minh, dân tộc ta đã vượt qua mọi khó khăn để giành được những chiến thắng vĩ đại.
           </p>
+         
         </div>
         <div className="context-media" aria-hidden="true">
           <div className="image-frame">
